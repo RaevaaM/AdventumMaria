@@ -6,8 +6,11 @@ namespace Adventum.Data
     public class Event
     {
         public int Id { get; set; }
+        [Display(Name = "Събитие")]
         public string Name { get; set; }
+        [Display(Name = "Описание")]
         public string Description { get; set; }
+        [Display(Name = "Кратко описание")]
         public string ShortDescription { get; set; }
         public string Duration { get; set; }
         

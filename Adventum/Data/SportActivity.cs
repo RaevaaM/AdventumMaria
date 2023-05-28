@@ -5,13 +5,14 @@ namespace Adventum.Data
     public class SportActivity
     {
         public int Id { get; set; }
+        [DisplayName("Спорт")]
 
         public string Name { get; set; }
 
-        [DisplayName("Short Description")]
+        [DisplayName("Кратко  описание")]
         public string Description { get; set; }
 
-        [DisplayName("Video URL")]
+        [DisplayName("Видео URL")]
         public string VideoURL { get; set; }
 
         public ICollection<Event> Events { get; set; }
