@@ -15,8 +15,8 @@ namespace Adventum.Controllers
         {
             _context = context;
         }
+       
 
-        
         public async Task<IActionResult> Index()
         {
             var activities = await _context.SportActivities.ToListAsync();
@@ -150,5 +150,7 @@ namespace Adventum.Controllers
         {
           return (_context.SportActivities?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+       
     }
 }

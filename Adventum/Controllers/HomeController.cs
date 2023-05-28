@@ -43,38 +43,7 @@ namespace Adventum.Controllers
         {
             return View();
         }
-        public IActionResult ATVpage()
-        {
-            return View();
-        }
-        public IActionResult BalloonPage()
-        {
-            return View();
-        }
-        public IActionResult BungeePage()
-        {
-            return View();
-        }
-        public IActionResult ClimbPage()
-        {
-            return View();
-        }
-        public IActionResult ParaPage()
-        {
-            return View();
-        }
-        public IActionResult RaftingPage()
-        {
-            return View();
-        }
-        public IActionResult SkydivePage()
-        {
-            return View();
-        }
-        public IActionResult SnowPage()
-        {
-            return View();
-        }
+       
         public async Task<IActionResult> Booking()
         {
             var events = await _context.Events

@@ -15,7 +15,7 @@
         }
         <th>@Html.DisplayNameFor(model => model.Event.Name)</th>
         <th>@Html.DisplayNameFor(model => model.Event.Description)</th>
-        <th>@Html.DisplayNameFor(model => model.Event.Location.Name)</th>
+        @*<th>@Html.DisplayNameFor(model => model.Event.Location.Name)</th>*@
         <th>@Html.DisplayNameFor(model => model.Event.SportActivity.Name)</th>
         <th>@Html.DisplayNameFor(model => model.ParticipantsCount)</th>
         <th>@Html.DisplayNameFor(model => model.Date)</th>
@@ -36,7 +36,7 @@
             }
             <td>@item.Event.Name</td>
             <td>@item.Event.Description</td>
-            <td>@item.Event.Location?.Name </td>
+            @*<td>@item.Event.Location?.Name </td>*@
             <td>@item.Event.SportActivity.Name</td>
             <td>@item.ParticipantsCount</td>
             <td>@Html.DisplayFor(m => item.Date)</td>
