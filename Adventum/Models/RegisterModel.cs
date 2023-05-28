@@ -5,18 +5,18 @@ namespace Adventum.Models;
 public class RegisterModel
 {
     [Required]
-    [Display(Name = "Username")]
+    [Display(Name = "Потребителско име")]
     [StringLength(25, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]
     public string Username { get; set; }
 
     [Required]
     [MaxLength(25)]
-    [Display(Name = "First name")]
+    [Display(Name = "Име")]
     public string FirstName { get; set; }
 
     [Required]
     [MaxLength(25)]
-    [Display(Name = "Last name")]
+    [Display(Name = "Фамилия")]
     public string LastName { get; set; }
 
 
@@ -28,11 +28,11 @@ public class RegisterModel
     [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.",
         MinimumLength = 6)]
     [DataType(DataType.Password)]
-    [Display(Name = "Password")]
+    [Display(Name = "Парола")]
     public string Password { get; set; }
 
     [DataType(DataType.Password)]
-    [Display(Name = "Confirm password")]
+    [Display(Name = "Потвърди парола")]
     [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
     public string ConfirmPassword { get; set; }
 }

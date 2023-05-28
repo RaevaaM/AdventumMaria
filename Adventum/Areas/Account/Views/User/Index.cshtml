@@ -1,7 +1,7 @@
 @model IEnumerable<UserModel>
 
 @{
-    ViewData["Title"] = "Users";
+    ViewData["Title"] = "Потребители";
     Layout = "_Layout";
 }
 
@@ -24,12 +24,12 @@ else
             <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Username</th>
-                <th scope="col">First name</th>
-                <th scope="col">Last name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Registered as</th>
-                <th scope="col">Actions</th>
+                <th scope="col">@Html.DisplayNameFor(model=>model.Username)</th>
+                    <th scope="col">@Html.DisplayNameFor(model=>model.FirstName)</th>
+                    <th scope="col">@Html.DisplayNameFor(model=>model.LastName)</th>
+                    <th scope="col">@Html.DisplayNameFor(model=>model.Email)</th>
+                    <th scope="col">@Html.DisplayNameFor(model=>model.RoleName)</th>
+                <th scope="col">Действия</th>
             </tr>
             </thead>
             <tbody>

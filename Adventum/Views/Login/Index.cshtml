@@ -25,12 +25,12 @@
                 
                 <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                 <div class="form-outline form-white mb-5" style="padding:0 10px;">
-                    <label asp-for="@Model.Username" class="form-label">Потребителско име</label>
+                    <label asp-for="@Model.Username" class="form-label">@Html.DisplayNameFor(model=> model.Username)</label>
                     <input asp-for="@Model.Username" class="form-control form-control-lg" autocomplete="username" aria-required="true" placeholder="username" />
                     <span asp-validation-for="@Model.Username" class="text-danger"></span>
                 </div>
                 <div class="form-outline form-white mb-5 " style="padding:0 10px;">
-                    <label asp-for="@Model.Password" class="form-label">Парола</label>
+                    <label asp-for="@Model.Password" class="form-label">@Html.DisplayNameFor(model=>model.Password)</label>
                     <input asp-for="@Model.Password" class="form-control form-control-lg" autocomplete="current-password" aria-required="true" placeholder="password" />
                     <span asp-validation-for="@Model.Password" class="text-danger"></span>
                 </div>
