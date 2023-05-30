@@ -19,6 +19,9 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.SportActivity.Name)
             </th>
             <th>
@@ -36,6 +39,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Duration)
+                </td>
             <td>
                 @Html.DisplayFor(modelItem => item.SportActivity.Name)
             </td>

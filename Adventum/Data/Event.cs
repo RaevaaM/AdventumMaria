@@ -12,6 +12,7 @@ namespace Adventum.Data
         public string Description { get; set; }
         [Display(Name = "Кратко описание")]
         public string ShortDescription { get; set; }
+        [Display(Name = "Продължителност")]
         public string Duration { get; set; }
         
         [DataType(DataType.Currency)]
