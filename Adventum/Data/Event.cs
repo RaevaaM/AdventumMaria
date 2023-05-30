@@ -16,12 +16,15 @@ namespace Adventum.Data
         public string Duration { get; set; }
         
         [DataType(DataType.Currency)]
+       
         public double Price { get; set; }
 
         public string ImageUrl { get; set; }
 
         [ForeignKey(nameof(SportActivity))]
+        [Display(Name = "Спорт")]
         public int SportActivityId { get; set; }
+        [Display(Name = "Локация")]
 
         [ForeignKey(nameof(Location))]
         public int LocationId { get; set; }
